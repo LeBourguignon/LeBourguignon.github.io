@@ -3,7 +3,21 @@
     margin: 0;
 }
 
-canvas {
-    display: block;
+body {
+    display: flex;
+    flex-direction: column;
+    counter-reset: counterColumn;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body > * {
     margin: auto;
+    margin-top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
