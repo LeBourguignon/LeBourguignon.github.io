@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/image/web/favicon-32x32.png">
+    <title>Image</title>
+</head>
+<body>
+	<canvas width="400" height="300" id="canvas"></canvas>
+
+    <menu>
+		<h1>Options</h1>
+
+        <div>
+            <h2>Chargement et binarisation de l'image</h2>
+
+            <input autocomplete="off" type="file" id="input"/>
+            <button id="reset">Réinitialiser</button>
+
+            <button id="grayscale">Niveaux de gris</button>
+
+            <p>Valeur du seuil : <span id="valueThreshold">128</span></p>
+            <input type="range" autocomplete="off" min="0" max="255" value="128" class="slider" id="rangeThresholding">
+            <button id="thresholding">Seuillage</button>
+        </div>
+        		
+		<div>
+            <h2>Opération morphologique</h2>
+
+            <p>Rayon du disque unité : <span id="valueRadius">3</span></p>
+            <input type="range" autocomplete="off" min="0" max="10" value="3" class="slider" id="rangeRadius">
+            
+            <button id="dilatation">Dilatation</button>
+            <button id="erosion">Érosion</button>
+            <button id="closing">Fermeture</button>
+            <button id="opening">Ouverture</button>
+        </div>
+
+        <div>
+            <button id="thinning">Amincissement</button>
+            <button id="thickening">Épaississement</button>
+        </div>
+            
+        <div>
+            <h2>Squelettisation</h2>
+
+            <button id="homotopicSkeletonization">Squelettisation homotopique</button>
+            <button id="lantuejoulSkeletonization">Squelettisation de Lantuejoul</button>
+        </div>
+
+		<footer>
+			<p>© 2022 - <a href="https://github.com/tom-rh" target="_blank">Tom Roth</a> & <a href="https://github.com/LeBourguignon/" target="_blank">Baptiste Andres</a> - ESIREM</p>
+		</footer>
+    </menu>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
