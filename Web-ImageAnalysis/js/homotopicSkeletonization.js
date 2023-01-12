@@ -1,5 +1,9 @@
 import { thinning } from "./thinning.js";
 
+/*
+* Cette fonction applique l'amincissement homotopique sur l'image.
+*/
+
 export function homotopicSkeletonization(img) {
     let before = new ImageData(img.width, img.height);
 
@@ -17,6 +21,10 @@ export function homotopicSkeletonization(img) {
 
     return out;
 }
+
+/*
+* Cette fonction affiche le squelette de l'image par la méthode de l'amincissement homotopique
+*/
 
 export function showHomotopicSkeletonization() {
     const ctx = document.getElementById('canvas').getContext('2d');

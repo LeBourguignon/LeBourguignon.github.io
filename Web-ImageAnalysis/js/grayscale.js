@@ -1,3 +1,8 @@
+/*
+* Cette fonction est appelée quand l'utilisateur clique sur le bouton "Niveaux de gris".
+* Elle applique le niveaux de gris sur l'image.
+*/
+
 export function grayscale() {
     const ctx = document.getElementById('canvas').getContext('2d');
     const img = ctx.getImageData(0, 0, canvas.width, canvas.height);

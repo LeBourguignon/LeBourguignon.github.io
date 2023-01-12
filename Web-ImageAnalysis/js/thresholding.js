@@ -1,3 +1,8 @@
+/*
+* Cette fonction est appellée quand l'utilisateur clique sur le bouton "Seuillage".
+* Elle applique le seuillage sur l'image.
+*/
+
 export function thresholding() {
 	const slider = document.getElementById("rangeThresholding");
     const ctx = document.getElementById('canvas').getContext('2d');

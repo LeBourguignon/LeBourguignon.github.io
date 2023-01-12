@@ -16,7 +16,7 @@ button, input {
 menu {
 	display: flex;
 	flex-direction: column;
-	row-gap: 2em;
+	row-gap: 1em;
 	background-color: #eee;
 	padding: 1em;
 	margin: 0;
@@ -35,4 +35,8 @@ menu > div > p {
 
 canvas {
 	margin: auto;
+}
+
+h1 {
+	margin: 0;
 }

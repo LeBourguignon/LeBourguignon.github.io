@@ -1,3 +1,7 @@
+/*
+* Cette fonction applique la dilatation sur l'image img avec un élément structurant carré de rayon radius.
+*/
+
 export function dilatation(img, radius, log = false) {
 	const out = new ImageData(img.width, img.height);
 	
@@ -27,6 +31,11 @@ export function dilatation(img, radius, log = false) {
 	if(log) console.log("Dilatation done");
 	return out;
 }
+
+/*
+* Cette fonction est appellée quand l'utilisateur clique sur le bouton "Dilatation".
+* Elle applique la dilatation sur l'image.
+*/
 
 export function showDilatation() {
 	const radius = document.getElementById("rangeRadius").value; 

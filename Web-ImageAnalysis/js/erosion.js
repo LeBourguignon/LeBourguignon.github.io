@@ -1,3 +1,7 @@
+/*
+* Cette fonction applique l'erosion sur l'image img avec un élément structurant de rayon radius.
+*/
+
 export function erosion(img, radius, log = false) {
 	const out = new ImageData(img.width, img.height);
 	
@@ -38,6 +42,11 @@ export function erosion(img, radius, log = false) {
 	if(log) console.log("Erosion done");
     return out;
 }
+
+/*
+* Cette fonction est appellée quand l'utilisateur clique sur le bouton "Erosion".
+* Elle applique l'erosion sur l'image.
+*/
 
 export function showErosion() {
     const radius = document.getElementById("rangeRadius").value; 

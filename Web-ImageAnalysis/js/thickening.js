@@ -1,4 +1,12 @@
 import { addition } from "./addition.js";
+import { subtraction } from "./subtraction.js";
+
+
+/*
+* Définition des matrices structurantes de l'épaississement
+* On utilise ici deux matrices différentes car nous n'avons pas réussi à faire des rotations de 45 degrés
+* Il y a une matrice avec une rotation de 0 degré et une autre à 45 degré sur lesquelles on appliquera des rotations de 90 degrés
+*/
 
 export const constL = [
     [255,   255,    255],
@@ -11,6 +19,10 @@ export const constM = [
     [255,   0,      0],
     [null,  0,      0]
 ];
+
+/*
+* Cette fonction épaissit une image en appliquant la matrice structurante passée en paramètre.
+*/
 
 export function thickeningRot(img, structuringElement) {
     let out = new ImageData(img.width, img.height);
@@ -49,29 +61,37 @@ export function thickeningRot(img, structuringElement) {
     return out;
 }
 
+/*
+* Cette fonction épaissit une image en appliquant les 8 rotations de la matrice structurante.
+*/
+
 export function thickening(img) {
     let localL = constL;
     let localM = constM;
 
     let out = thickeningRot(img, localL);
-    out = addition(out, thickeningRot(img, localM));
+    out = addition(out, thickeningRot(subtraction(img, out), localM));
     localL = localL[0].map((value, index) => localL.map(row => row[row.length-1-index]));
     localM = localM[0].map((value, index) => localM.map(row => row[row.length-1-index]));
-    out = addition(out, thickeningRot(img, localL));
-    out = addition(out, thickeningRot(img, localM));
+    out = addition(out, thickeningRot(subtraction(img, out), localL));
+    out = addition(out, thickeningRot(subtraction(img, out), localM));
     localL = localL[0].map((value, index) => localL.map(row => row[row.length-1-index]));
     localM = localM[0].map((value, index) => localM.map(row => row[row.length-1-index]));
-    out = addition(out, thickeningRot(img, localL));
-    out = addition(out, thickeningRot(img, localM));
+    out = addition(out, thickeningRot(subtraction(img, out), localL));
+    out = addition(out, thickeningRot(subtraction(img, out), localM));
     localL = localL[0].map((value, index) => localL.map(row => row[row.length-1-index]));
     localM = localM[0].map((value, index) => localM.map(row => row[row.length-1-index]));
-    out = addition(out, thickeningRot(img, localL));
-    out = addition(out, thickeningRot(img, localM));
+    out = addition(out, thickeningRot(subtraction(img, out), localL));
+    out = addition(out, thickeningRot(subtraction(img, out), localM));
 
     out = addition(img, out);
 
     return out;
 }
+
+/*
+* Cette fonction affiche l'image épaissie
+*/
 
 export function showThickening() {
 	const ctx = document.getElementById('canvas').getContext('2d');

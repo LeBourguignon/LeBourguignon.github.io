@@ -1,5 +1,10 @@
 let currentImage = null;
 
+/*
+* Cette fonction est appellée quand l'utilisateur seletionne une image à envoyer.
+* Elle affiche l'image dans le canvas.
+*/
+
 export function handleFiles(e) {
     const ctx = document.getElementById('canvas').getContext('2d');
     const img = new Image;
@@ -12,6 +17,11 @@ export function handleFiles(e) {
         ctx.drawImage(img, 0, 0);
     }
 }
+
+/*
+* Cette fonction est appellée quand l'utilisateur clique sur le bouton "Reset".
+* Elle réinitialise l'image à l'image originale.
+*/
 
 export function reset() {
 	const ctx = document.getElementById('canvas').getContext('2d');

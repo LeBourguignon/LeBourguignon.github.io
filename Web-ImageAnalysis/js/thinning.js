@@ -1,6 +1,12 @@
 import { addition } from "./addition.js";
 import { subtraction } from "./subtraction.js";
 
+/*
+* Définition des matrices structurantes de l'amincissement
+* On utilise ici deux matrices différentes car nous n'avons pas réussi à faire des rotations de 45 degrés
+* Il y a une matrice avec une rotation de 0 degré et une autre à 45 degré sur lesquelles on appliquera des rotations de 90 degrés
+*/
+
 export const constL = [
     [255,   255,    255],
     [null,  255,    null],
@@ -12,6 +18,10 @@ export const constM = [
     [255,   255,    0],
     [null,  0,      0]
 ];
+
+/*
+* Cette fonction amincit une image à partir d'un élément structurant passé en paramètre
+*/
 
 export function thinningRot(img, structuringElement) {
     let out = new ImageData(img.width, img.height);
@@ -50,29 +60,37 @@ export function thinningRot(img, structuringElement) {
     return out;
 }
 
+/*
+* Cette fonction amincit une image en appliquant les 8 rotations de la matrice structurante.
+*/
+
 export function thinning(img) {
     let localL = constL;
     let localM = constM;
 
     let out = thinningRot(img, localL);
-    out = addition(out, thinningRot(img, localM));
+    out = addition(out, thinningRot(subtraction(img, out), localM));
     localL = localL[0].map((value, index) => localL.map(row => row[row.length-1-index]));
     localM = localM[0].map((value, index) => localM.map(row => row[row.length-1-index]));
-    out = addition(out, thinningRot(img, localL));
-    out = addition(out, thinningRot(img, localM));
+    out = addition(out, thinningRot(subtraction(img, out), localL));
+    out = addition(out, thinningRot(subtraction(img, out), localM));
     localL = localL[0].map((value, index) => localL.map(row => row[row.length-1-index]));
     localM = localM[0].map((value, index) => localM.map(row => row[row.length-1-index]));
-    out = addition(out, thinningRot(img, localL));
-    out = addition(out, thinningRot(img, localM));
+    out = addition(out, thinningRot(subtraction(img, out), localL));
+    out = addition(out, thinningRot(subtraction(img, out), localM));
     localL = localL[0].map((value, index) => localL.map(row => row[row.length-1-index]));
     localM = localM[0].map((value, index) => localM.map(row => row[row.length-1-index]));
-    out = addition(out, thinningRot(img, localL));
-    out = addition(out, thinningRot(img, localM));
+    out = addition(out, thinningRot(subtraction(img, out), localL));
+    out = addition(out, thinningRot(subtraction(img, out), localM));
 
     out = subtraction(img, out);
 
     return out;
 }
+
+/*
+* Cette fonction affiche l'image amincie
+*/
 
 export function showThinning() {
 	const ctx = document.getElementById('canvas').getContext('2d');

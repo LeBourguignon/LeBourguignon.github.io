@@ -1,3 +1,7 @@
+/*
+* Cette fonction additionne deux images de même tailles (largeur et hauteur) et retourne une nouvelle image.
+*/
+
 export function addition(img1, img2) {
     var out = new ImageData(img1.width, img1.height);
 

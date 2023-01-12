@@ -1,8 +1,11 @@
 import { addition } from "./addition.js";
-import { closing } from "./closing.js";
 import { erosion } from "./erosion.js";
 import { opening } from "./opening.js";
 import { subtraction } from "./subtraction.js";
+
+/*
+* Cette fonction applique l'algorithme de Lantuejoul sur l'image.
+*/
 
 export function lantuejoulSkeletonization(img) {
     const ctx = document.getElementById('canvas').getContext('2d');
@@ -30,11 +33,13 @@ export function lantuejoulSkeletonization(img) {
 
         n++;
     }
-
-    out = closing(out, n/3);
     
     return out
 }
+
+/*
+* Cette fonction affiche le squelette de l'image par la méthode de Lantuejoul
+*/
 
 export function showLantuejoulSkeletonization() {
     const ctx = document.getElementById('canvas').getContext('2d');
