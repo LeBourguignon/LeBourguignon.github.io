@@ -1,0 +1,211 @@
+{
+    "bundles": [
+        {
+            "name" : "adventurer",
+            "assets" : [
+                {
+            
+                    "name" : "adventurerFall00",
+                    "srcs" : "assets/adventurer/fall/adventurer-fall-00.png"
+                },
+                {
+                    "name" : "adventurerFall01",
+                    "srcs" : "assets/adventurer/fall/adventurer-fall-01.png"
+                },
+            
+
+
+                {
+                    "name" : "adventurerIdle00",
+                    "srcs" : "assets/adventurer/idle/adventurer-idle-00.png"
+                },
+                {
+                    "name" : "adventurerIdle01",
+                    "srcs" : "assets/adventurer/idle/adventurer-idle-01.png"
+                },
+                {
+                    "name" : "adventurerIdle02",
+                    "srcs" : "assets/adventurer/idle/adventurer-idle-02.png"
+                },
+                {
+                    "name" : "adventurerIdle03",
+                    "srcs" : "assets/adventurer/idle/adventurer-idle-03.png"
+                },
+            
+
+
+                {
+                    "name" : "adventurerJump00",
+                    "srcs" : "assets/adventurer/jump/adventurer-jump-00.png"
+                },
+                {
+                    "name" : "adventurerJump01",
+                    "srcs" : "assets/adventurer/jump/adventurer-jump-01.png"
+                },
+                {
+                    "name" : "adventurerJump02",
+                    "srcs" : "assets/adventurer/jump/adventurer-jump-02.png"
+                },
+                {
+                    "name" : "adventurerJump03",
+                    "srcs" : "assets/adventurer/jump/adventurer-jump-03.png"
+                },
+            
+
+
+                {
+                    "name" : "adventurerWalk00",
+                    "srcs" : "assets/adventurer/walk/adventurer-walk-00.png"
+                },
+                {
+                    "name" : "adventurerWalk01",
+                    "srcs" : "assets/adventurer/walk/adventurer-walk-01.png"
+                },
+                {
+                    "name" : "adventurerWalk02",
+                    "srcs" : "assets/adventurer/walk/adventurer-walk-02.png"
+                },
+                {
+                    "name" : "adventurerWalk03",
+                    "srcs" : "assets/adventurer/walk/adventurer-walk-03.png"
+                },
+                {
+                    "name" : "adventurerWalk04",
+                    "srcs" : "assets/adventurer/walk/adventurer-walk-04.png"
+                },
+                {
+                    "name" : "adventurerWalk05",
+                    "srcs" : "assets/adventurer/walk/adventurer-walk-05.png"
+                },
+            
+
+
+                {
+                    "name" : "adventurerRun00",
+                    "srcs" : "assets/adventurer/run/adventurer-run-00.png"
+                },
+                {
+                    "name" : "adventurerRun01",
+                    "srcs" : "assets/adventurer/run/adventurer-run-01.png"
+                },
+                {
+                    "name" : "adventurerRun02",
+                    "srcs" : "assets/adventurer/run/adventurer-run-02.png"
+                },
+                {
+                    "name" : "adventurerRun03",
+                    "srcs" : "assets/adventurer/run/adventurer-run-03.png"
+                },
+                {
+                    "name" : "adventurerRun04",
+                    "srcs" : "assets/adventurer/run/adventurer-run-04.png"
+                },
+                {
+                    "name" : "adventurerRun05",
+                    "srcs" : "assets/adventurer/run/adventurer-run-05.png"
+                },
+            
+
+
+                {
+                    "name" : "adventurerRun200",
+                    "srcs" : "assets/adventurer/run2/adventurer-run2-00.png"
+                },
+                {
+                    "name" : "adventurerRun201",
+                    "srcs" : "assets/adventurer/run2/adventurer-run2-01.png"
+                },
+                {
+                    "name" : "adventurerRun202",
+                    "srcs" : "assets/adventurer/run2/adventurer-run2-02.png"
+                },
+                {
+                    "name" : "adventurerRun203",
+                    "srcs" : "assets/adventurer/run2/adventurer-run2-03.png"
+                },
+                {
+                    "name" : "adventurerRun204",
+                    "srcs" : "assets/adventurer/run2/adventurer-run2-04.png"
+                },
+                {
+                    "name" : "adventurerRun205",
+                    "srcs" : "assets/adventurer/run2/adventurer-run2-05.png"
+                },
+            
+
+
+                {
+                    "name" : "adventurerSoundStep00",
+                    "srcs" : "assets/adventurer/sound/adventurer-sound-step-00.wav"
+                },
+                {
+                    "name" : "adventurerSoundStep01",
+                    "srcs" : "assets/adventurer/sound/adventurer-sound-step-01.wav"
+                }
+            ]
+        },
+        {
+            "name" : "tenemigs",
+            "assets" : [
+                {
+                    "name" : "tenemigsIdle00",
+                    "srcs" : "assets/tenemigs/idle/tenemigs-idle-00.png"
+                },
+                {
+                    "name" : "tenemigsIdle01",
+                    "srcs" : "assets/tenemigs/idle/tenemigs-idle-01.png"
+                },
+                {
+                    "name" : "tenemigsIdle02",
+                    "srcs" : "assets/tenemigs/idle/tenemigs-idle-02.png"
+                },
+                {
+                    "name" : "tenemigsIdle03",
+                    "srcs" : "assets/tenemigs/idle/tenemigs-idle-03.png"
+                },
+                {
+                    "name" : "tenemigsIdle04",
+                    "srcs" : "assets/tenemigs/idle/tenemigs-idle-04.png"
+                },
+                {
+                    "name" : "tenemigsIdle05",
+                    "srcs" : "assets/tenemigs/idle/tenemigs-idle-05.png"
+                }
+            ]
+        },
+        {
+            "name" : "theme",
+            "assets" : [
+                {
+                    "name" : "theme01",
+                    "srcs" : "assets/theme/theme-01.wav"
+                },
+                {
+                    "name" : "theme02",
+                    "srcs" : "assets/theme/theme-02.wav"
+                }
+            ]
+        },
+        {
+            "name" : "torch",
+            "assets" : [
+                {
+                    "name" : "torchOff",
+                    "srcs" : "assets/torch/torch-off.png"
+                },
+                {
+                    "name" : "torchOn00",
+                    "srcs" : "assets/torch/torch-on-00.png"
+                },
+                {
+                    "name" : "torchOn01",
+                    "srcs" : "assets/torch/torch-on-01.png"
+                },
+                {
+                    "name" : "torchOn02",
+                    "srcs" : "assets/torch/torch-on-02.png"
+                }
+            ]
+        }
+    ]
+}
