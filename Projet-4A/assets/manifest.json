@@ -4,7 +4,6 @@
             "name" : "adventurer",
             "assets" : [
                 {
-            
                     "name" : "adventurerFall00",
                     "srcs" : "assets/adventurer/fall/adventurer-fall-00.png"
                 },
@@ -187,6 +186,13 @@
         {
             "name" : "tenemigs",
             "assets" : [
+                {
+                    "name" : "tenemigsDialogboxBackground",
+                    "srcs" : "assets/tenemigs/dialogbox/tenemigs-dialogbox-background.png"
+                },
+
+
+
                 {
                     "name" : "tenemigsIdle00",
                     "srcs" : "assets/tenemigs/idle/tenemigs-idle-00.png"
