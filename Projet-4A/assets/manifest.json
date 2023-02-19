@@ -260,23 +260,97 @@
             ]
         },
         {
-            "name" : "torch",
+            "name" : "light",
             "assets" : [
                 {
+                    "name" : "fireplace01Off",
+                    "srcs" : "assets/light/fireplace01/fireplace01-off.png"
+                },
+                {
+                    "name" : "fireplace01On00",
+                    "srcs" : "assets/light/fireplace01/fireplace01-on-00.png"
+                },
+                {
+                    "name" : "fireplace01On01",
+                    "srcs" : "assets/light/fireplace01/fireplace01-on-01.png"
+                },
+                {
+                    "name" : "fireplace01On02",
+                    "srcs" : "assets/light/fireplace01/fireplace01-on-02.png"
+                },
+                {
+                    "name" : "fireplace01On03",
+                    "srcs" : "assets/light/fireplace01/fireplace01-on-03.png"
+                },
+                {
+                    "name" : "fireplace01On04",
+                    "srcs" : "assets/light/fireplace01/fireplace01-on-04.png"
+                },
+                {
+                    "name" : "fireplace01On05",
+                    "srcs" : "assets/light/fireplace01/fireplace01-on-05.png"
+                },
+
+
+
+                {
+                    "name" : "fireplace02Off",
+                    "srcs" : "assets/light/fireplace02/fireplace02-off.png"
+                },
+                {
+                    "name" : "fireplace02On00",
+                    "srcs" : "assets/light/fireplace02/fireplace02-on-00.png"
+                },
+                {
+                    "name" : "fireplace02On01",
+                    "srcs" : "assets/light/fireplace02/fireplace02-on-01.png"
+                },
+                {
+                    "name" : "fireplace02On02",
+                    "srcs" : "assets/light/fireplace02/fireplace02-on-02.png"
+                },
+                {
+                    "name" : "fireplace02On03",
+                    "srcs" : "assets/light/fireplace02/fireplace02-on-03.png"
+                },
+                {
+                    "name" : "fireplace02On04",
+                    "srcs" : "assets/light/fireplace02/fireplace02-on-04.png"
+                },
+                {
+                    "name" : "fireplace02On05",
+                    "srcs" : "assets/light/fireplace02/fireplace02-on-05.png"
+                },
+
+
+
+                {
                     "name" : "torchOff",
-                    "srcs" : "assets/torch/torch-off.png"
+                    "srcs" : "assets/light/torch/torch-off.png"
                 },
                 {
                     "name" : "torchOn00",
-                    "srcs" : "assets/torch/torch-on-00.png"
+                    "srcs" : "assets/light/torch/torch-on-00.png"
                 },
                 {
                     "name" : "torchOn01",
-                    "srcs" : "assets/torch/torch-on-01.png"
+                    "srcs" : "assets/light/torch/torch-on-01.png"
                 },
                 {
                     "name" : "torchOn02",
-                    "srcs" : "assets/torch/torch-on-02.png"
+                    "srcs" : "assets/light/torch/torch-on-02.png"
+                },
+                {
+                    "name" : "torchOn03",
+                    "srcs" : "assets/light/torch/torch-on-03.png"
+                },
+                {
+                    "name" : "torchOn04",
+                    "srcs" : "assets/light/torch/torch-on-04.png"
+                },
+                {
+                    "name" : "torchOn05",
+                    "srcs" : "assets/light/torch/torch-on-05.png"
                 }
             ]
         }
