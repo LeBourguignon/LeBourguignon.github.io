@@ -12,8 +12,8 @@ export const Header = () => {
   return (
     <header className="bg-card sticky top-0 pt-4">
         <Section className="flex items-baseline">
-          <Link href="/">
-            <h1 className="text-lg font-bold text-primary">LeBourguignon.github.io</h1>
+          <Link href="https://lebourguignon.github.io/">
+            <h1 className="text-lg font-bold text-primary">lebourguignon.github.io</h1>
           </Link>
           <div className="flex-1" />
           <ul className="flex items-center gap-2">

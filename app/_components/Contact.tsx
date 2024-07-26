@@ -11,8 +11,8 @@ const CONTACT_CARDS = [
     {
         image: "https://lh3.googleusercontent.com/a/ACg8ocIip0fDr2XbSwnMQY1wW7K_pe3nNYcaFEEqewFwwO3l5XToZDrM=s288-c-no",
         mediumImage: "https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI=w240-h480-rw",
-        name: "baptiste.andres.01@gmail.com",
-        description: "Mail",
+        name: "Baptiste Andres",
+        description: "baptiste.andres.01@gmail.com",
         url: "mailto:baptiste.andres.01@gmail.com",
         className: "flex-1"
     },

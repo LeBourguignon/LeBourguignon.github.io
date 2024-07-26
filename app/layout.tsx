@@ -12,7 +12,7 @@ const AnekTelugu = Anek_Telugu({
 
 export const metadata: Metadata = {
   title: "Baptiste Andres",
-  description: "Portfolio de Baptiste ANDRES",
+  description: "Portfolio de Baptiste Andres, Ingénieur Logiciel",
 };
 
 export default function RootLayout({
