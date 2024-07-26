@@ -183,7 +183,7 @@ const FORMATIONS: FormationProps[] = [
         image: "https://media.licdn.com/dms/image/D4D0BAQEi1K21GtCr8Q/company-logo_100_100/0/1710320868081/esirem_logo?e=1729728000&v=beta&t=6GMC0C2UIhlF5edrU8ri9_DbdtDQqXc4IUnvc_8SqdQ",
         title: "Polytech Dijon",
         role: "Ingénieur informatique",
-        date: "2021 - 2024",
+        date: "2019 - 2024",
         url: "https://www.polytech-dijon.fr/"
     },
     {
