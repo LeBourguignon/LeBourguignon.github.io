@@ -66,19 +66,19 @@ const PROJECTS: ProjectProps[] = [
         logo: Gamepad2,
         title: "Heredium",
         description: "Jeu vidéo d'horreur en 3D, développé avec Unreal Engine.",
-        url: "/"
+        url: "/projets"
     },
     {
         logo: Zap,
         title: "Road To Computing",
         description: "Jeu sérieux sur l'éléctronique, développé avec Unity.",
-        url: "/"
+        url: "/projets"
     },
     {
         logo: Shirt,
         title: "Augmented Mirror",
         description: "Cabine d'essayage virtuelle, développée avec Unity.",
-        url: "/"
+        url: "/projets"
     },
     {
         logo: Cog,
