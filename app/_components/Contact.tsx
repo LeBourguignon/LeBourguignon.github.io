@@ -17,7 +17,7 @@ const CONTACT_CARDS = [
         className: "flex-1"
     },
     {
-        image: "https://media.licdn.com/dms/image/D4E35AQHaLTf2FUglxQ/profile-framedphoto-shrink_200_200/0/1711908638962?e=1722463200&v=beta&t=dDfBtN4vCZ14aRSFfOifnAPNcQbZFTZK9UqANEyrUmI",
+        image: "/PP.jpg",
         mediumImage: "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480-rw",
         name: "Baptiste Andres",
         description: "LinkedIn",
